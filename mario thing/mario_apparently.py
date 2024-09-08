@@ -13,7 +13,7 @@ class Game:
         self.tk.update()
         self.canvas_height = 500
         self.canvas_width = 500
-        self.bg = PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/background.gif")
+        self.bg = PhotoImage(file="/mario thing/background.gif")
         w = self.bg.width()
         h = self.bg.height()
         for x in range(0, 5):
@@ -112,14 +112,14 @@ class StickFigureSprite(Sprite):
     def __init__(self, game):
         Sprite.__init__(self, game)
         self.images_left = [
-            PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/figure-L1.gif"),
-            PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/figure-L2.gif"),
-            PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/figure-L3.gif")
+            PhotoImage(file="/mario thing/figure-L1.gif"),
+            PhotoImage(file="/mario thing/figure-L2.gif"),
+            PhotoImage(file="/mario thing/figure-L3.gif")
         ]
         self.images_right = [
-            PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/figure-R1.gif"),
-            PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/figure-R2.gif"),
-            PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/figure-R3.gif")
+            PhotoImage(file="/mario thing/figure-R1.gif"),
+            PhotoImage(file="/mario thing/figure-R2.gif"),
+            PhotoImage(file="/mario thing/figure-R3.gif")
         ]
         self.image = game.canvas.create_image(200, 470, image=self.images_left[0], anchor='nw')
         self.x = -2
@@ -238,26 +238,26 @@ class StickFigureSprite(Sprite):
 
 g = Game()
 stick = StickFigureSprite(g)
-platform1 = PlatformSprite(g, PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/platform1.gif"), \
-0, 480, 100, 10)
-platform2 = PlatformSprite(g, PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/platform1.gif"), \
-150, 440, 100, 10)
-platform3 = PlatformSprite(g, PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/platform1.gif"), \
-300, 400, 100, 10)
-platform4 = PlatformSprite(g, PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/platform1.gif"), \
-300, 160, 100, 10)
-platform5 = PlatformSprite(g, PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/platform2.gif"), \
-175, 350, 66, 10)
-platform6 = PlatformSprite(g, PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/platform2.gif"), \
-50, 300, 66, 10)
-platform7 = PlatformSprite(g, PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/platform2.gif"), \
-170, 120, 66, 10)
-platform8 = PlatformSprite(g, PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/platform2.gif"), \
-45, 60, 66, 10)
-platform9 = PlatformSprite(g, PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/platform3.gif"), \
-170, 250, 32, 10)
-platform10 = PlatformSprite(g, PhotoImage(file="C:/Users/renat/PycharmProjects/OOP/basics/mario thing/platform3.gif"), \
-230, 200, 32, 10)
+platform1 = PlatformSprite(g, PhotoImage(file="/mario thing/platform1.gif"), \
+                           0, 480, 100, 10)
+platform2 = PlatformSprite(g, PhotoImage(file="/mario thing/platform1.gif"), \
+                           150, 440, 100, 10)
+platform3 = PlatformSprite(g, PhotoImage(file="/mario thing/platform1.gif"), \
+                           300, 400, 100, 10)
+platform4 = PlatformSprite(g, PhotoImage(file="/mario thing/platform1.gif"), \
+                           300, 160, 100, 10)
+platform5 = PlatformSprite(g, PhotoImage(file="/mario thing/platform2.gif"), \
+                           175, 350, 66, 10)
+platform6 = PlatformSprite(g, PhotoImage(file="/mario thing/platform2.gif"), \
+                           50, 300, 66, 10)
+platform7 = PlatformSprite(g, PhotoImage(file="/mario thing/platform2.gif"), \
+                           170, 120, 66, 10)
+platform8 = PlatformSprite(g, PhotoImage(file="/mario thing/platform2.gif"), \
+                           45, 60, 66, 10)
+platform9 = PlatformSprite(g, PhotoImage(file="/mario thing/platform3.gif"), \
+                           170, 250, 32, 10)
+platform10 = PlatformSprite(g, PhotoImage(file="/mario thing/platform3.gif"), \
+                            230, 200, 32, 10)
 g.sprites.append(platform1)
 g.sprites.append(platform2)
 g.sprites.append(platform3)
